@@ -3,7 +3,6 @@
   "main": "dist/index.js",
   "compatibility_date": "2024-01-01",
   "compatibility_flags": ["nodejs_compat"],
-  "node_compat": true,
   "env": {
     "MDB_MCP_READ_ONLY": "true"
   },
@@ -14,10 +13,7 @@
     "crons": []
   },
   "routes": [
-    {
-      "pattern": "api/*",
-      "script": "dist/index.js"
-    }
+    "api/*"
   ],
   "build": {
     "command": "npm run build",
